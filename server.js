@@ -9,6 +9,8 @@ app.use(express.json());
 const supabaseUrl = 'https://fzvpikfcglioodxdsxym.supabase.co';
 const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const webhookSecret = process.env.SQUARESPACE_WEBHOOK_SECRET;
+const SQUARESPACE_API_KEY = process.env.SQUARESPACE_API_KEY;
+
 
 const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
